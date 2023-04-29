@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7AD6948E29FC66570020439A /* AlvBarrosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6948D29FC66570020439A /* AlvBarrosApp.swift */; };
-		7AD6949029FC66570020439A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6948F29FC66570020439A /* ContentView.swift */; };
 		7AD6949229FC665B0020439A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6949129FC665B0020439A /* Assets.xcassets */; };
 		7AD6949529FC665B0020439A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6949429FC665B0020439A /* Preview Assets.xcassets */; };
 		7AD6949C29FC7CCE0020439A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6949B29FC7CCE0020439A /* GoogleService-Info.plist */; };
 		7AD6949F29FC7DA00020439A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7AD6949E29FC7DA00020439A /* FirebaseAuth */; };
 		7AD694A429FC81890020439A /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD694A329FC81890020439A /* SignUpViewModel.swift */; };
+		7AE9B5D429FD7904001879B4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE9B5D329FD7904001879B4 /* AppState.swift */; };
+		7AE9B5D829FD808C001879B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE9B5D729FD808C001879B4 /* AppDelegate.swift */; };
+		7AE9B5DF29FD8165001879B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE9B5DE29FD8165001879B4 /* ContentView.swift */; };
+		7AE9B5E129FD8772001879B4 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE9B5E029FD8772001879B4 /* AboutView.swift */; };
+		7AE9B5E329FD884F001879B4 /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE9B5E229FD884F001879B4 /* RepositoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AD6948A29FC66570020439A /* AlvBarros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlvBarros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD6948D29FC66570020439A /* AlvBarrosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlvBarrosApp.swift; sourceTree = "<group>"; };
-		7AD6948F29FC66570020439A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AD6949129FC665B0020439A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD6949429FC665B0020439A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7AD6949B29FC7CCE0020439A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7AD694A329FC81890020439A /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		7AE9B5D329FD7904001879B4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		7AE9B5D729FD808C001879B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AE9B5DE29FD8165001879B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AE9B5E029FD8772001879B4 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		7AE9B5E229FD884F001879B4 /* RepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,13 @@
 		7AD6948C29FC66570020439A /* AlvBarros */ = {
 			isa = PBXGroup;
 			children = (
-				7AD694A229FC817A0020439A /* View Models */,
+				7AE9B5DB29FD8133001879B4 /* Resources */,
+				7AE9B5DA29FD812B001879B4 /* Domain */,
+				7AE9B5D929FD8106001879B4 /* Presentation */,
+				7AE9B5D629FD807F001879B4 /* System */,
+				7AE9B5D129FD7535001879B4 /* Injected */,
 				7AD6949B29FC7CCE0020439A /* GoogleService-Info.plist */,
 				7AD6948D29FC66570020439A /* AlvBarrosApp.swift */,
-				7AD6948F29FC66570020439A /* ContentView.swift */,
-				7AD6949129FC665B0020439A /* Assets.xcassets */,
 				7AD6949329FC665B0020439A /* Preview Content */,
 			);
 			path = AlvBarros;
@@ -81,6 +91,64 @@
 				7AD694A329FC81890020439A /* SignUpViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		7AE9B5D129FD7535001879B4 /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				7AE9B5D329FD7904001879B4 /* AppState.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		7AE9B5D629FD807F001879B4 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				7AE9B5D729FD808C001879B4 /* AppDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		7AE9B5D929FD8106001879B4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7AE9B5DD29FD814F001879B4 /* Components */,
+				7AE9B5DC29FD8149001879B4 /* Pages */,
+				7AE9B5DE29FD8165001879B4 /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7AE9B5DA29FD812B001879B4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7AD694A229FC817A0020439A /* View Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7AE9B5DB29FD8133001879B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AD6949129FC665B0020439A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7AE9B5DC29FD8149001879B4 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				7AE9B5E029FD8772001879B4 /* AboutView.swift */,
+				7AE9B5E229FD884F001879B4 /* RepositoriesView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		7AE9B5DD29FD814F001879B4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD6949029FC66570020439A /* ContentView.swift in Sources */,
 				7AD694A429FC81890020439A /* SignUpViewModel.swift in Sources */,
+				7AE9B5DF29FD8165001879B4 /* ContentView.swift in Sources */,
 				7AD6948E29FC66570020439A /* AlvBarrosApp.swift in Sources */,
+				7AE9B5D829FD808C001879B4 /* AppDelegate.swift in Sources */,
+				7AE9B5E129FD8772001879B4 /* AboutView.swift in Sources */,
+				7AE9B5D429FD7904001879B4 /* AppState.swift in Sources */,
+				7AE9B5E329FD884F001879B4 /* RepositoriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
