@@ -10,9 +10,14 @@ import SwiftUI
 @main
 struct AlvBarrosApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var userViewModel = UserViewModel(isAuthenticated: false)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
+            .environmentObject(userViewModel)
         }
     }
 }

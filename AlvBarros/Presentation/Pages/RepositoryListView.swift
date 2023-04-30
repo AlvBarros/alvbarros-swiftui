@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct RepositoriesView: View {
+struct RepositoryListView: View {
 //    @State private var repos: Loadable<LazyList<String>>
     
 //    init(repos: Loadable<LazyList<String>> = .notRequested) {
@@ -16,7 +16,15 @@ struct RepositoriesView: View {
 //    }
     
     var body: some View {
-        Text("RepositoriesView")
+        Text("Repository List")
             .padding()
     }
 }
+
+#if DEBUG
+struct RepositoryListView_Previews: PreviewProvider {
+    static var previews: some View {
+        RepositoryListView() // TODO Add mock repository list
+    }
+}
+#endif
